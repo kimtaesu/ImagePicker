@@ -9,7 +9,7 @@
 import Foundation
 import Photos
 
-enum PhotoSeachOptions {
+enum PhotoFetchOptions {
     case albums
     case videos
     case recentAdded
@@ -17,7 +17,7 @@ enum PhotoSeachOptions {
     case recents
 }
 
-extension PhotoSeachOptions {
+extension PhotoFetchOptions {
     private var allMediaPredic: NSPredicate {
         return NSPredicate(format: "(mediaType = %ld || mediaType = %ld)", PHAssetMediaType.image.rawValue, PHAssetMediaType.video.rawValue)
     }

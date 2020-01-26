@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoDetailViewController: UIViewController {
+class PhotoDetailViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
