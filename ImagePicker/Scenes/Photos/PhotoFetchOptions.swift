@@ -23,7 +23,7 @@ extension PhotoFetchOptions {
     }
     func asRequest() -> PhotoRequest {
         let fetchOptions = PHFetchOptions()
-        fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+        
         switch self {
         case .albums:
             fetchOptions.sortDescriptors = [NSSortDescriptor(key: "localizedTitle", ascending: true)]
